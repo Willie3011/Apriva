@@ -4,8 +4,8 @@
 :root {
   --white-color: #fff;
   --dark-color: #252525;
-  --primary-color: #3b141c;
-  --secondary-color: #f3961c;
+  --primary-color: #40554b;
+  --secondary-color: #d6ef84;
   --light-pink-color: #faf4f5;
   --medium-gray-color: #ccc;
 
@@ -237,6 +237,42 @@ header .navbar {
   color: var(--secondary-color);
 }
 
+/* Menu Section */
+.menu-section{
+  color: var(--white-color);
+  background: var(--dark-color);
+  padding: 50px 0 100px;
+}
+
+.menu-section .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 3 - 100px);
+}
+
+.menu-section .menu-list .menu-item .menu-image {
+  max-width: 83%;
+  aspect-ratio: 1;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.menu-section .menu-list .menu-item .name {
+  margin: 12px 0;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+}
 @media screen and (max-width: 900px) {
   :root {
     --font-size-m: 1rem;
@@ -303,7 +339,7 @@ header .navbar {
     justify-content: center;
   }
 
-  .hero-section .hero-details :is(.subtitle, .description) {
+  .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details {
     max-width: 100%;
   }
 
