@@ -40,11 +40,11 @@ A responsive, elegant website for Apriva restaurant showcasing their menu, story
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/willie3011/apriva-restaurant.git
+   git clone https://github.com/willie3011/Apriva.git
    ```
 2. Navigate to the project directory:
     ```bash
-    cd apriva-restaurant
+    cd Apriva
     ```
 
 3. Open ```index.html``` in your browser.
