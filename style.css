@@ -341,6 +341,15 @@ header .navbar {
   gap: 48px;
 }
 
+.contact-section .section-title {
+  padding: 60px 0 40px;
+}
+
+.contact-section .text {
+  padding: 20px;
+  font-size: var(--font-size-m);
+}
+
 .contact-section .contact-info-list .contact-info {
   display: flex;
   align-items: center;
@@ -476,7 +485,9 @@ header .navbar {
     justify-content: center;
   }
 
-  .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details {
+  .hero-section .hero-details :is(.subtitle, .description), 
+  .about-section .about-details,
+  .contact-section .contact-form {
     max-width: 100%;
   }
 
@@ -511,6 +522,11 @@ header .navbar {
 
   .menu-section .menu-list .menu-item .menu-image {
     max-width: 200px;
+  }
+
+  .contact-section .section-content {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
